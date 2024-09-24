@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* General App Layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Choices Buttons */
+.choices {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.choices button {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin: 0 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.choices button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.choices button:active {
+  transform: scale(1);
+}
+
+/* Result Section */
+.result {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.result p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+.result h2 {
+  font-size: 1.8rem;
+  color: #27ae60;
+  margin-top: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .choices button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .result p {
+    font-size: 1rem;
+  }
+
+  .result h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
